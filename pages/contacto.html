@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Club-Atletico-Rosario-Central.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contactos</title>
+</head>
+<body id="grilla-contacto">
+    <header id="header-contacto">
+        <img src="../img/Club-Atletico-Rosario-Central.png" alt="logo menu" class="logo-nav">
+        <h1 class="titulo-contacto">Contacto</h1>
+        <nav>
+            <ul id="navegacion">
+                <li>
+                   <a href="../index.html">Inicio</a></li>
+                <li>
+                   <a href="tienda.html">Tienda</a></li>
+                   <li>
+                    <a href="galeria.html">Galeria</a>
+                   </li>
+                <li>
+                   <a href="sedes.html">Sedes</a></li>
+                <li>
+                    <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="tabla">
+        <h2 class="formulario-contacto">Contacto.</h2>
+        <h3 class="formulario-contacto">Completa el formulario y dejanos tu consulta.</h3>
+        <form>
+                <legend>Tus datos personales</legend>
+                <div class="formulario">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" 
+                    placeholder="Nombres" required>
+                
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido"
+                    placeholder="Apellidos" required>
+                
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" 
+                    placeholder="E-mail" required>
+                
+                    <label for="civil">Sexo</label>
+                     <select id="select">
+                        <option value="">Masculino</option>
+                        <option value="">Femenino</option>
+                        <option value="">Otro</option>
+                     </select>
+                
+                    <label for="mensaje">Dejanos tu mensaje</label>
+                    <textarea id="mensaje" cols="30" rows="10" maxlength="50" ></textarea>
+                
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                    <input type="reset" value="Limpiar formulario" class="limpiar">
+                </div>
+        </form>
+     </section>
+     <footer>
+        <p class="parrafo-footer">Sitio desarrollado por Arian Basteri por curso de desarrollo web de Coderhouse</p>
+    </footer>
+</body>
+</html>
