@@ -398,7 +398,8 @@ legend {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     background-color: rgb(255, 255, 0);
-    color: rgb(3, 3, 168);    
+    color: rgb(3, 3, 168);
+    text-align: center;  
 }
 footer {
     grid-area: footer;
