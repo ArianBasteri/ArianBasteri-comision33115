@@ -323,6 +323,12 @@ img {
     align-items: center;
     margin-bottom: 2rem;
 }
+@media screen and (max-width: 767px) {
+    #header-sedes {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .titulo-sedes {
     color: blue;
     background-color: yellow;
@@ -330,8 +336,9 @@ img {
     font-size: 2.5rem;
 }
 #sedes-section {
-    grid: sedes;
+    grid-area: sedes;
     text-align: center;
+    align-items: center;
 }
 .bienvenidoSede {
     font-size: 2rem;
@@ -339,20 +346,21 @@ img {
     margin-bottom: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sedes-fondo {
+/*.sedes-fondo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 2rem;
     row-gap: 1.5rem;
     justify-content: center;
-}
+}*/
 .fondo-sedes {
     max-width: 40rem;
+    /*margin-left: 2rem;*/
     border: solid 0.5rem rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 1rem;
 }
 .fondo-sedes h3 {
     font-size: 1.5rem;
@@ -361,6 +369,10 @@ img {
 }
 #footersedes {
     grid-area: footer;
+}
+iframe {
+    height: 30rem;
+    width: 30rem;
 }
 .titulo-contacto {
     background-color: yellow;
@@ -424,11 +436,11 @@ label, p {
     color: yellow;
 }
 input, select {
-    width: 60%;
+    width: 55%;
     padding: 0.4rem;
 }
 #mensaje {
-    width: 50%;
+    width: 55%;
 }
 .enviar {
     margin-top: 1rem;
@@ -439,11 +451,8 @@ input, select {
     width: 20%;
 }
 legend {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    background-color: rgb(255, 255, 0);
-    color: rgb(3, 3, 168);
-    text-align: center;  
+    font-size: 2rem;
+    color: yellow;
 }
 footer {
     grid-area: footer;
