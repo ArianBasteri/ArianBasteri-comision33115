@@ -354,6 +354,11 @@ img {
     align-items: center;
     padding: 1rem;
 }
+.fondo-sedes h3 {
+    font-size: 1.5rem;
+    background-color: rgb(2, 2, 184);
+    color: yellow;
+}
 .titulo-contacto {
     background-color: yellow;
     color: rgb(7, 7, 185);
