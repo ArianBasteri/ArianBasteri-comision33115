@@ -307,17 +307,9 @@ img {
     width: 35rem;
     max-width: 100%;
 }
-.fondo-sedes {
-    background-color: yellow;
-}
-.parrafo-sedes {
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    background-color: blue;
-    color: yellow;
-    margin-bottom: 3rem;
-}
+
+
+
 .titulo-contacto {
     background-color: yellow;
     color: rgb(7, 7, 185);
