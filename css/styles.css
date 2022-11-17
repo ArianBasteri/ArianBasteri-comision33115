@@ -352,12 +352,15 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 .fondo-sedes h3 {
     font-size: 1.5rem;
     background-color: rgb(2, 2, 184);
     color: yellow;
+}
+#footersedes {
+    grid-area: footer;
 }
 .titulo-contacto {
     background-color: yellow;
