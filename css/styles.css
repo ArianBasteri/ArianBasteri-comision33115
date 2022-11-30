@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*Tamaño de pantallas*/
+/*Tipo de letras*/
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +10,16 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
 }
-
-a {
+ul a {
   text-decoration: none;
   color: rgb(255, 255, 0);
-}
-
-img {
-  max-width: 100%;
 }
 
 .logo-nav {
@@ -26,7 +28,6 @@ img {
   max-width: 100%;
   transition: all 2s;
 }
-
 .logo-nav:hover {
   transform: scale(1.2);
 }
@@ -47,7 +48,6 @@ img {
   font-size: 1.5rem;
   transition: all 0.5s;
 }
-
 #navegacion li:hover {
   background-color: green;
 }
@@ -113,7 +113,6 @@ img {
   align-items: center;
   justify-content: space-around;
 }
-
 #imagenes-inicio img {
   width: 50rem;
   height: 40rem;
@@ -160,9 +159,7 @@ img {
 #tienda-section {
   grid-area: productos;
 }
-
-#tienda-section h2,
-#tienda-section p {
+#tienda-section h2, #tienda-section p {
   text-align: center;
 }
 
@@ -194,7 +191,6 @@ img {
   align-items: center;
   padding: 1rem;
 }
-
 .card-articulos p {
   color: black;
   margin-top: 1rem;
@@ -207,7 +203,6 @@ img {
   margin-top: 2rem;
   padding: 2rem;
 }
-
 #banner-tienda h2 {
   text-align: center;
   color: rgb(209, 209, 4);
@@ -238,9 +233,7 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
-.banner-detalles h3,
-.banner-detalles p {
+.banner-detalles h3, .banner-detalles p {
   color: rgb(209, 209, 4);
   font-size: 1.6rem;
   margin-top: 2rem;
@@ -367,6 +360,7 @@ img {
   background-color: yellow;
   padding: 1rem;
   font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 #sedes-section {
@@ -376,7 +370,7 @@ img {
 }
 
 .bienvenidoSede {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: yellow;
   margin-bottom: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -398,11 +392,14 @@ img {
   align-items: center;
   padding: 1rem;
 }
-
 .fondo-sedes h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background-color: rgb(2, 2, 184);
   color: yellow;
+}
+.fondo-sedes p {
+  color: yellow;
+  font-size: 1.2rem;
 }
 
 #footersedes {
@@ -416,7 +413,7 @@ iframe {
 
 .titulo-contacto {
   background-color: yellow;
-  color: rgb(7, 7, 185);
+  color: blue;
   padding: 1rem;
   font-size: 2.5rem;
   font-family: "Roboto", sans-serif;
@@ -472,8 +469,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-
-label, p {
+.formulario label {
   display: flex;
   align-content: center;
   font-size: 1.5rem;
@@ -492,11 +488,13 @@ input, select {
 .enviar {
   margin-top: 1rem;
   width: 20%;
+  font-size: 1.5rem;
 }
 
 .limpiar {
   margin-top: 1rem;
   width: 20%;
+  font-size: 1.5rem;
 }
 
 legend {

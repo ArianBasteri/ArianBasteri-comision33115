@@ -1,0 +1,117 @@
+#grilla-tienda {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "productos productos productos"
+    "banner banner banner"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    background-image: $bg-grillas;
+}
+#header-tienda {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: $pantalla-mediana) {
+    #header-tienda {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.titulo-tienda {
+    color: blue;
+    background-color: yellow;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-family: $fuente-titulos;
+}
+.bienvenidoTienda {
+    color: yellow;
+    font-size: 3rem;
+}
+#tienda-section {
+    grid-area: productos;
+    h2, p {
+    text-align: center;
+}
+}
+.card-tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    row-gap: 1.5rem;
+    justify-items: center;
+}
+@media screen and (max-width: $pantalla-grande) {
+    .card-tienda {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: $pantalla-mediana) {
+    .card-tienda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.card-articulos {
+    max-width: 40rem;
+    border: solid 0.5rem rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    p {
+    color: black;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+}
+#banner-tienda {
+    grid-area: banner;
+    background-color: rgb(3, 3, 151);
+    margin-top: 2rem;
+    padding: 2rem;
+    h2 {
+    text-align: center;
+    color: rgb(209, 209, 4);
+    font-size: 3rem;
+}
+}
+.banner-articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+@media screen and (max-width: $pantalla-grande) {
+    .banner-articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+@media screen and (max-width: $pantalla-mediana) {
+    .banner-articulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.banner-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+h3, p {
+    color: rgb(209, 209, 4);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+}
+#footer-tienda {
+    grid-area: footer;
+}
+.boton {
+    padding: 1rem;
+}
