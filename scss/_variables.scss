@@ -7,3 +7,12 @@ $pantalla-grande: 992px;
 
 /*Tipo de letras*/
 $fuente-titulos: 'Roboto', sans-serif;
+
+/*Mixins*/
+@mixin flex-around-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Dia festivos*/
+$fiesta: ninguno;

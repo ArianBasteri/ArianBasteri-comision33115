@@ -6,13 +6,19 @@
     "banner banner banner"
     "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
+    @if $fiesta == madre {
+        background-color: pink;
+    } @else if $fiesta == padre {
+        background-color: blue;
+    } @else if $fiesta == mundial {
+        background-image: linear-gradient(rgb(133, 133, 255,), white);
+    } @else {
     background-image: $bg-grillas;
+}
 }
 #header-tienda {
     grid-area: header;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-around-center;
     margin-bottom: 2rem;
 }
 @media screen and (max-width: $pantalla-mediana) {
@@ -103,7 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-h3, p {
+    h3, p {
     color: rgb(209, 209, 4);
     font-size: 1.6rem;
     margin-top: 2rem;
